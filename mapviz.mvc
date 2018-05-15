@@ -1,0 +1,38 @@
+capture_directory: ~
+fixed_frame: Epe
+target_frame: Ne
+fix_orientation: false
+rotate_90: false
+enable_antialiasing: true
+show_displays: true
+show_status_bar: true
+show_capture_tools: true
+window_width: 1366
+window_height: 719
+view_scale: 1
+offset_x: 0
+offset_y: 0
+use_latest_transforms: true
+background: "#a0a0a4"
+displays:
+
+###############
+# Offline map #
+###############
+
+
+  - type: mapviz_plugins/multires_image
+    name: Rena large
+    config:
+      visible: true
+      collapsed: true
+      path: rena_large/mapviz.geo
+
+  - type: mapviz_plugins/multires_image
+    name: Rena SIBO
+    config:
+      visible: true
+      collapsed: true
+      path: rena_sibo/mapviz.geo
+
+
